@@ -1,0 +1,28 @@
+{
+    "/api/": {
+        "target": "https://localhost:8089/api",
+        "secure": false,
+        "pathRewrite": {
+            "^/api": ""
+        },
+        "changeOrigin": true
+    },
+
+    "/user_registration/": {
+      "target": "https://localhost:8090/api/userregistration",
+      "secure": false,
+      "pathRewrite": {
+          "^/user_registration": ""
+      },
+      "changeOrigin": true
+  },
+
+  "/geoserver_map/": {
+    "target": "http://localhost:7777/geoserver/uvsoftgroupgeospatial/wms",
+    "secure": false,
+    "pathRewrite": {
+        "^/geoserver_map": ""
+    },
+    "changeOrigin": true
+}
+}

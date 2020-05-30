@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+.map {
+	height: 87%;
+	width: 80%;
+	position: absolute;
+	left:350px;
+  top: 69px;
+  right:50px;
+}
+
+.geomap {
+	height: 87%;
+	width: 80%;
+	position: absolute;
+	left:350px;
+  top: 69px;
+  right:80px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
