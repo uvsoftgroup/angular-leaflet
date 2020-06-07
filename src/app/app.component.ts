@@ -11,7 +11,6 @@ declare let L;
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-
   latitude = 23.825515115835344;
   longitude = 90.37126734852791;
   zomeLevel = 7;
@@ -54,7 +53,7 @@ export class AppComponent implements OnInit {
     let i;
 
     // Point Vector Layer
-    for (i = 0; i <= 100; i++) {
+    for (i = 0; i <= 5 ; i++) {
      this.markers =  L.marker([22.825515115835344 + Math.random(), 90.37126734852791 + + Math.random()],
         {title: 'Point_' + i, alt: 'Point-' + i , draggable: true}).addTo(map);
     }
@@ -86,7 +85,7 @@ export class AppComponent implements OnInit {
 
 
   // Circle Vector Layer
-  for (i = 0; i <= 10; i++) {
+  for (i = 0; i <= 1; i++) {
   this.circle = L.circle([22.825515115835344, 89.37126734852791],
             {radius: 100000 * Math.random()});
   this.circleLayer.push(this.circle + i);
@@ -94,11 +93,11 @@ export class AppComponent implements OnInit {
 
 
 // Rectangle Vector Layer
-  for (i = 0; i <= 10; i++) {
+  for (i = 0; i <= 1; i++) {
   // define rectangle geographical bounds
 this.bounds = [
-  [22.825515115835344 + Math.random(), 90.37126734852791 + Math.random()],
- [22.925515115835344 + Math.random(), 90.87126734852791 + Math.random()]];
+  [23.825515115835344 + Math.random(), 90.37126734852791 + Math.random()],
+ [23.925515115835344 + Math.random(), 90.87126734852791 + Math.random()]];
 // create an orange rectangle
 this.rectangulerLayer = L.rectangle(this.bounds, {color: 'green', weight: 1});
 // zoom the map to the rectangle bounds
@@ -130,8 +129,12 @@ const svgElementBounds = [
 this.svgLayer = L.svgOverlay(svgElement, svgElementBounds);
 }
 
-const allVectorLayers = L.layerGroup([this.svgLayer, this.polygon,
-  this.rectangulerLayer, this.circle, this.polyline]);
+const allVectorLayers = L.layerGroup([
+  this.svgLayer,
+  this.polygon,
+  this.rectangulerLayer,
+  this.circle,
+  this.polyline]);
 
 // ImageOverlay
 const imageUrl = 'http://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg',
@@ -177,7 +180,10 @@ const overlays = {
 baseMaps: could possible to set as a null layer, if required
  Layers grouping and controlling position: topleft, topright, bottomleft, bottomright
  */
-L.control.layers(baseMaps, overlays, {position: 'topright'}).addTo(map);
+L.control.layers(
+  baseMaps,
+  overlays,
+  {position: 'topright'}).addTo(map);
 // Map Scalling
 L.control.scale().addTo(map);
 
