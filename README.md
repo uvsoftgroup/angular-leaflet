@@ -4,7 +4,7 @@
 Hope this video will be interested in Web Map or GIS application's Front-End/GUI/UI development with JaveScript based 
 framework as like Node.js,Angular,JavaScript & TypeScript, leaflet javascript web map APIs and Geoserver to be helpful for those who are interested in.\
 
-## Technology & Tools used:\
+## Technology & Tools used:
 1.Node.js, Angular,JavaScript & TypeScript, leaflet and Geoserver\
 2.Angular Component Libraries(Prime NG,NGX Bootstrap,NG Bootstrap,NG2 Charts and so on)\
 3.OpenStreet map, GeoServer, Leaflet and other JavaScript libraries\
@@ -13,8 +13,7 @@ framework as like Node.js,Angular,JavaScript & TypeScript, leaflet javascript we
 6.Proxy Configuring Setup and Microservices /APIs Rewrite the URL path\
 7.tar based packaging(angular-leaflet-0.1.0.1.tar)\
 8.Docker Image and Docker Container\
-9.Functional or Web GUI/UI testing (Selenium)
-
+9.Functional or Web GUI/UI testing (Selenium)\
 ## 2_1:Development
 [<img src="https://img.youtube.com/vi/scWegfopInw/maxresdefault.jpg" width="100%">](https://youtu.be/scWegfopInw)
 ## 2_2:Development
