@@ -14,6 +14,8 @@ framework as like Node.js,Angular,JavaScript & TypeScript, leaflet javascript we
 7.tar based packaging(angular-leaflet-0.1.0.1.tar)\
 8.Docker Image and Docker Container\
 9.Functional or Web GUI/UI testing (Selenium)
+
+[YouTube Playlist] (https://www.youtube.com/playlist?list=PL61PaxtHbYMoi-7Tf0INBpMQ6otVQXPed)
 ## 2_1:Development
 [<img src="https://img.youtube.com/vi/scWegfopInw/maxresdefault.jpg" width="100%">](https://youtu.be/scWegfopInw)
 ## 2_2:Development
