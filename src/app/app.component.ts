@@ -50,6 +50,14 @@ export class AppComponent implements OnInit {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     });
 
+
+    // Define a style
+const myStyle = {
+  'color': '#ff7800',
+  'weight': 5,
+  'opacity': 0.65
+};
+
     let i;
 
     // Point Vector Layer
@@ -176,6 +184,11 @@ const overlays = {
   'Construction Movie Nature' : videoLayer2,
   'Enviromental Protection Area': allVectorLayers
 };
+
+/*
+const geojsonLayer = new L.geoJson.ajax('assets/data/countries.geojson');
+ geojsonLayer.addTo(map);
+
 /*
 baseMaps: could possible to set as a null layer, if required
  Layers grouping and controlling position: topleft, topright, bottomleft, bottomright
